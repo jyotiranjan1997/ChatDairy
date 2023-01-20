@@ -1,0 +1,60 @@
+.middle {
+  width: 50%;
+  height: 80vw;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.left {
+  width: 30%;
+  height: 80vw;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.right {
+  width: 20%;
+  height: 80vw;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.top {
+  width: 100%;
+  background-color: rgb(13, 202, 161);
+  border: 1px solid grey;
+}
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30%;
+  color: white;
+}
+.background {
+  background-image: url("https://th.bing.com/th/id/R.ea777f6d354f655183f145da3417eed9?rik=jiG3EYxSfGud7g&riu=http%3a%2f%2fs1.picswalls.com%2fwallpapers%2f2015%2f09%2f20%2fbackground-2015_111525910_269.jpg&ehk=XpB35TDfpT5%2b7egn8f%2fPff5NHq8XfbMOYLrvHJGlMnE%3d&risl=&pid=ImgRaw&r=0");
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+.message {
+  width: 100%;
+  height: 150vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.message > input {
+  width: 80%;
+  border: 0.5px solid grey;
+  padding: 5px 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.message > button {
+  padding: 7px 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(161, 77, 240);
+}

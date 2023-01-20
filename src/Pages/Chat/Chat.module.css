@@ -1,0 +1,15 @@
+.chartPage{
+    display: flex;
+    margin-top: 80px;
+
+}
+
+.chartPage>div:nth-child(1){
+    width:35%;
+    border: 0.5px solid grey;
+}
+
+.chartPage>div:nth-child(2){
+    width:65%;
+     border: 0.5px solid grey;
+}

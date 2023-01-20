@@ -1,0 +1,17 @@
+
+.caraousel{
+    width:98%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:15px;
+    margin-top: 20px;
+}
+
+.box{
+    width:25%;
+    height: 200px;
+    border: 1px solid grey;
+    border-radius: 15px;
+}
