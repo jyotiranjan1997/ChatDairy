@@ -1,0 +1,26 @@
+.btn {
+  background: linear-gradient(#37ecba, #72afd3);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  cursor: pointer;
+}
+
+Input {
+  width: 100%;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+Input::placeholder {
+  text-align: center;
+}

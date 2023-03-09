@@ -1,37 +1,15 @@
-import ModalOpen from "../../Components/Modal";
-import ButtonComponent from "../../Components/ButtonComponent/ButtonComponent";
-import Post from "../../Components/Post/Post"
+import ModalOpen from "./Modal";
+
+import Post from "./Post/Post";
 import Styles from "./Profile.module.css";
 import CircumIcon from "@klarr-agency/circum-icons-react";
 import { useLocation, useNavigate } from "react-router-dom";
-import Left from "../../Components/Middle/Left";
-import { Flex } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-export default function Profile() {
-  const [user, setUser] = useState({});
-  const [personal, setPersonal] = useState(true);
-  const [friend, setFriend] = useState({});
-  const naviagte = useNavigate();
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.state.user) {
-      setUser(location.state.user);
-    } else {
-      setFriend(location.state.friend);
-      setPersonal(false);
-    }
-  }, [location.state.friend]);
-  const handleBack = (e) => {
-    e.preventDefault();
-    naviagte("/")
-  }
+import Styles from "./FriendsProfile.module.css";
+export default function FriendsProfile() {
   return (
-    <>
-      <Flex mt="80px" gap="10px" >
-        <Left />
-      <div className={Styles.middle}>
-      <div className={Styles.back} onClick={handleBack} >
+    <div className={Styles.middle}>
+      <div className={Styles.back} onClick={handleBack}>
         <CircumIcon
           name="circle_chev_left"
           color="rgb(42, 230, 189)"
@@ -52,9 +30,9 @@ export default function Profile() {
       <div className={Styles.About}>
         <div className={Styles.profileBtn}>
           <div>
-           {personal ? <ModalOpen name="Jyotiranjan Mohanty" dob="" about="" /> : <ButtonComponent title="Friend" /> }
-                <h1>{ personal ? user.name :friend.name}</h1>
-                <h1>{ personal ? user.address : friend.address}</h1>
+            <ModalOpen name="Jyotiranjan Mohanty" dob="" about="" />
+            <h1>Jyotiranjan Mohanty</h1>
+            <h1>Balikuda,Odisha</h1>
           </div>
 
           <div>
@@ -94,9 +72,6 @@ export default function Profile() {
           </div>
         </div>
       </div>
-    </div></Flex>
-    </>
-      
-    
+    </div>
   );
 }

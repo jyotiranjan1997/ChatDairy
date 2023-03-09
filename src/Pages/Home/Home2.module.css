@@ -1,7 +1,12 @@
 .home {
-  width: 95%;
+  width: 98%;
   margin: auto;
   display: flex;
   gap: 10px;
+}
+
+@media all and (min-width:200px) and (max-width:400px){
+.home {
   margin-top: 80px;
+}
 }

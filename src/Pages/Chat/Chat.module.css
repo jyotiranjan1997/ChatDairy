@@ -1,9 +1,20 @@
 .chartPage{
     display: flex;
     margin-top: 80px;
-
+    height: calc(100vh - 70px);
 }
-
+.searchOption2{
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+  height: 200px;
+}
+.searchOption1{
+  display: none;
+}
 .chartPage>div:nth-child(1){
     width:35%;
     border: 0.5px solid grey;
@@ -12,4 +23,16 @@
 .chartPage>div:nth-child(2){
     width:65%;
      border: 0.5px solid grey;
+}
+
+
+
+/* CHat 2 css */
+.main__chatbody {
+  flex-grow: 1;
+  background:linear-gradient(#E3FDF5,
+#afcae9);
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: flex;
 }

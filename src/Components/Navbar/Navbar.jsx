@@ -45,12 +45,7 @@ export default function Navbar() {
         </li>
       </ul>
       <ul className={styles.small}>
-        <li>
-          <CircumIcon name="chat_2" />
-        </li>
-        <li>
-          <CircumIcon name="bell_on" />
-        </li>
+       
         <li onClick={handleClick}>
           <CircumIcon name="user" />
           <div className={ac.click ? styles.account : styles.ac}>

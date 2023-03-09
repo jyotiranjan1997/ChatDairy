@@ -31,6 +31,7 @@ export default function Login() {
           text: is_error,
         });
       } else if (authToken) {
+       
         Swal.fire({
           icon: "success",
           title: "Login Successfully !",

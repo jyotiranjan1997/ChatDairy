@@ -42,7 +42,7 @@ export const signup = (data) => async (dispatch) => {
 
   try {
     let res = await axios.post(
-      "https://chartdiarybackend-production.up.railway.app/user/signup",
+      "http://localhost:5000/user/signup",
       data
     );
     console.log(res.data)
@@ -60,10 +60,10 @@ export const login = (data) => async (dispatch) => {
 
   try {
     let res = await axios.post(
-      "https://chartdiarybackend-production.up.railway.app/user/login",
+      "http://localhost:5000/user/login",
       data
     );
-    return dispatch(login_sucess(res.data));
+    return dispatch(login_sucess(res.data.user_token));
   } catch (err) {
     return dispatch(
       login_failed("Something went wrong to login Please try again !")

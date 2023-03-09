@@ -1,0 +1,99 @@
+.profileBtn button {
+  background-color: rgb(13, 202, 161);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-bottom: 10px;
+}
+.middle {
+  width: 65%;
+  
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: rgb(183, 240, 235);
+  margin-left: 31%;
+  margin-right: 0;
+ 
+}
+.btn:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  cursor: pointer;
+}
+.profileBtn {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin-top: 25px;
+  margin-left: 8%;
+}
+.profileBtn > div:nth-child(2) {
+  display: flex;
+  gap: 18px;
+}
+
+.frn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.About {
+  background-color: rgb(183, 240, 235);
+}
+.prflImage {
+  position: relative;
+  top: 70%;
+  left: 10%;
+}
+
+.background {
+  background-image: url("https://th.bing.com/th/id/R.ea777f6d354f655183f145da3417eed9?rik=jiG3EYxSfGud7g&riu=http%3a%2f%2fs1.picswalls.com%2fwallpapers%2f2015%2f09%2f20%2fbackground-2015_111525910_269.jpg&ehk=XpB35TDfpT5%2b7egn8f%2fPff5NHq8XfbMOYLrvHJGlMnE%3d&risl=&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+
+.container {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  justify-content: center;
+}
+.PostCard {
+  height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color: white;
+  border-radius: 18px;
+}
+
+.back{
+  background-color: transparent;
+  position: fixed;
+  cursor: pointer;
+  z-index: 10;
+}
+.profileBtn h1 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 3px;
+}
+.container h1 {
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+@media all and (min-width: 200px) and (max-width: 900px) {
+  .middle {
+    width: 95%;
+  }
+}
+
+@media all and (min-width: 200px) and (max-width: 500px){
+.middle {
+    margin-left: 5px;
+  }
+}
